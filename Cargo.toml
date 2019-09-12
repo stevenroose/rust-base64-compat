@@ -1,14 +1,16 @@
 [package]
-name = "base64"
-version = "0.10.1"
-authors = ["Alice Maz <alice@alicemaz.com>", "Marshall Pierce <marshall@mpierce.org>"]
-description = "encodes and decodes base64 as bytes or utf8"
-repository = "https://github.com/alicemaz/rust-base64"
-documentation = "https://github.com/alicemaz/rust-base64/blob/master/README.md"
+name = "base64-compat"
+version = "1.0.0"
+authors = ["Steven Roose <steven@stevenroose.org>"]
+description = "encodes and decodes base64 as bytes or utf8 - compatible with older Rust versions"
+repository = "https://github.com/stevenroose/rust-base64-compat"
 readme = "README.md"
 keywords = ["base64", "utf8", "encode", "decode"]
 categories = ["encoding"]
 license = "MIT/Apache-2.0"
+
+[lib]
+name = "base64"
 
 [[bench]]
 name = "benchmarks"

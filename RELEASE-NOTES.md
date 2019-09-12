@@ -1,6 +1,15 @@
-# Next
 
-- TBD
+# 1.0.0
+
+- First release, based on crates.io's base64 crate version 0.10.1, but
+  with added support for older Rust versions.
+- MSRV: v1.19.0
+
+
+Upstream
+========
+
+Old release notes of upstream base64.
 
 # 0.10.1
 

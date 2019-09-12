@@ -1,18 +1,24 @@
-[base64](https://crates.io/crates/base64)
+[base64-compat](https://crates.io/crates/base64-compat)
 ===
 
-[![](https://img.shields.io/crates/v/base64.svg)](https://crates.io/crates/base64) [![Docs](https://docs.rs/base64/badge.svg)](https://docs.rs/base64) [![Build](https://travis-ci.org/alicemaz/rust-base64.svg?branch=master)](https://travis-ci.org/alicemaz/rust-base64) [![codecov](https://codecov.io/gh/alicemaz/rust-base64/branch/master/graph/badge.svg)](https://codecov.io/gh/alicemaz/rust-base64)
-
-<a href="https://www.jetbrains.com/?from=rust-base64"><img src="/icon_CLion.svg" height="40px"/></a>
-
-Made with CLion. Thanks to JetBrains for supporting open source!
+[![](https://img.shields.io/crates/v/base64-compat.svg)](https://crates.io/crates/base64-compat) [![Docs](https://docs.rs/base64-compat/badge.svg)](https://docs.rs/base64-compat) [![Build](https://travis-ci.org/stevenroose/rust-base64-compat.svg?branch=master)](https://travis-ci.org/stevenroose/rust-base64-compat) [![codecov](https://codecov.io/gh/stevenroose/rust-base64-compat/branch/master/graph/badge.svg)](https://codecov.io/gh/stevenroose/rust-base64-compat)
 
 It's base64. What more could anyone want?
+
+Perhaps a stable API and compatibility with not-last-summer Rust versions?
+
+This project is a fork of [rust-base64](https://github.com/marshallpierce/rust-base64/) with stable support for older Rust versions.
+
+
+----------
+
 
 This library's goals are to be *correct* and *fast*. It's thoroughly tested and widely used. It exposes functionality at multiple levels of abstraction so you can choose the level of convenience vs performance that you want, e.g. `decode_config_slice` decodes into an existing `&mut [u8]` and is pretty fast (2.6GiB/s for a 3 KiB input), whereas `decode_config` allocates a new `Vec<u8>` and returns it, which might be more convenient in some cases, but is slower (although still fast enough for most purposes) at 2.1 GiB/s.
 
 Example
 ---
+
+Cargo.toml line: `base64-compat = "1.0.0"`
 
 ```rust
 extern crate base64;
@@ -106,4 +112,6 @@ cargo +nightly fuzz run decode_random
 License
 ---
 
-This project is dual-licensed under MIT and Apache 2.0.
+This project is a fork of the [rust-base64](https://github.com/marshallpierce/rust-base64/) project,
+which is dual-licensed under MIT and Apache 2.0.
+This project is thus also dual-licensed under MIT and Apache 2.0.
