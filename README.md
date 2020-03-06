@@ -34,7 +34,7 @@ fn main() {
 }
 ```
 
-See the [docs](https://docs.rs/base64) for all the details.
+See the [docs](https://docs.rs/base64-compat) for all the details.
 
 Rust version compatibility
 ---
@@ -115,3 +115,6 @@ License
 This project is a fork of the [rust-base64](https://github.com/marshallpierce/rust-base64/) project,
 which is dual-licensed under MIT and Apache 2.0.
 This project is thus also dual-licensed under MIT and Apache 2.0.
+
+All copyrights of code in this project belong to the original
+copyright holders of the original rust-base64 project.
